@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4112340922703731180
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4112340922703731182}
+  - component: {fileID: 4112340922703731181}
+  - component: {fileID: 6963386316577033342}
+  m_Layer: 0
+  m_Name: DropGunManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &4112340922703731182
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4112340922703731180}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 88.79407, y: -42.058323, z: 1.0035058}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4112340922703731181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4112340922703731180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93a0cd9f74cad2c4c9db869ab6439413, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gunInHands: {fileID: 1570163734819100388, guid: 0479bf6356cae5148b9a7eba695d5ce9, type: 3}
+  crowbar: {fileID: 2198618019706163917, guid: 2682921a9205fee488b47400a6bf9ab6, type: 3}
+  M4: {fileID: 1969362223111100009, guid: 0cfbd73bd03523f449b8252fc18ab1de, type: 3}
+  camera: {fileID: 7238087911284685456, guid: 00eb660c006ee9641a72f808fcfee7ec, type: 3}
+  Player: {fileID: 8737611204063670972, guid: 1db36b11bb533cc4c818586ca535bdd8, type: 3}
+  CanvasText: {fileID: 4709926137620554173, guid: 19efe0cbd84d20348a76f92ec15b13a5, type: 3}
+  ActiveKalashIcon: {fileID: 513528064349635210, guid: 55060899e5ce6e84aa6a9982499be6c1, type: 3}
+  NoActiveKalashIcon: {fileID: 1211980681566182455, guid: be0e74ee8af2e4d4bbcdcd280a545556, type: 3}
+  ActiveM4Icon: {fileID: 3357580662596810715, guid: 0c3bbdfcbc0ff9e4eba4cded5f9705c0, type: 3}
+  NoActiveM4Icon: {fileID: 9172473736802036386, guid: 7afce524c859f3141873039f85c7c1b2, type: 3}
+  ActiveCrowBarIcon: {fileID: 8037095977144810687, guid: 093a291db6d3e2748871ee2490810ca1, type: 3}
+  NoActiveCrowBarIcon: {fileID: 6480579182808206729, guid: 9d0c5875ea319b34aa378f101935c01a, type: 3}
+  PatronsTextKalash: {fileID: 3041391825839955675, guid: b13bb4a1899bedb4593549377709d925, type: 3}
+  M4PatronsText: {fileID: 5184937445208588178, guid: eafa4d8d63397ca4c838b3d080037595, type: 3}
+  NumberWeapon: {fileID: 4934356570117727726, guid: 445ef1c96068ba7488fa1cff7f92fa59, type: 3}
+  TakeGunText: {fileID: 4709926137620554173, guid: 19efe0cbd84d20348a76f92ec15b13a5, type: 3}
+  rb: {fileID: 1570163734826362148, guid: 0479bf6356cae5148b9a7eba695d5ce9, type: 3}
+  rbM4: {fileID: 1161722190629702865, guid: 0cfbd73bd03523f449b8252fc18ab1de, type: 3}
+  dropPower: 300
+  haveGun: 0
+  haveM4: 1
+  M4Selected: 1
+  KalashSelected: 0
+  M4Layer:
+    serializedVersion: 2
+    m_Bits: 4096
+  KalashLayer:
+    serializedVersion: 2
+    m_Bits: 1024
+  M4Anim: {fileID: 1161722190629702864, guid: 0cfbd73bd03523f449b8252fc18ab1de, type: 3}
+  KalashAnim: {fileID: 1570163734826362149, guid: 0479bf6356cae5148b9a7eba695d5ce9, type: 3}
+  PlayerShots: {fileID: 8737611204063670948, guid: 1db36b11bb533cc4c818586ca535bdd8, type: 3}
+--- !u!114 &6963386316577033342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4112340922703731180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
